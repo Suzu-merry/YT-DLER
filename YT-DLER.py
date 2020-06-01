@@ -1,6 +1,5 @@
 print('Please wait...')
 import os
-import random
 import re
 import string
 from pytube import Playlist

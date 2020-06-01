@@ -48,7 +48,7 @@ def processURL(target,audioOnly):
                     break
             except:
                 try:
-                    print(f'Failed to download {make_ordinal(count+1)} video from{playlistName}, retrying...')
+                    print(f'Failed to download {make_ordinal(count+1)} video from {playlistName}, retrying...')
                     result = dlVideo(videoURL,audioOnly,playlistName)
                     print(f'Successfully downloaded {result}, {make_ordinal(count+1)} video from {playlistName}')
                     count+=1

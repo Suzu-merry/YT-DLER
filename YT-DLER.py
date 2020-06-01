@@ -7,8 +7,6 @@ from pytube import Playlist
 from pytube import YouTube
 import PySimpleGUI as sg
 
-#py -3 -m PyInstaller --onefile --hidden-import=PySimpleGui YT-DLER.py
-
 def sanitize(filename):
     return filename.translate(str.maketrans('', '', string.punctuation))
     

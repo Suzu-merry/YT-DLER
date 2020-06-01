@@ -9,7 +9,7 @@ import PySimpleGUI as sg
 def sanitize(filename):
     return filename.translate(str.maketrans('', '', string.punctuation))
     
-def make_ordinal(n):
+def make_ordinal(n): #thanks to Florian Brucker: https://stackoverflow.com/a/50992575
     n = int(n)
     suffix = ['th', 'st', 'nd', 'rd', 'th'][min(n % 10, 4)]
     if 11 <= (n % 100) <= 13:
